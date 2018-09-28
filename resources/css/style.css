@@ -1,0 +1,121 @@
+html{
+    font-size: 16px;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Header Section */
+
+header.desktop{
+    display: flex;
+    height: 4rem;
+    align-items: center;
+    align-content: center;
+    width:100%;
+    background-color:whitesmoke;
+   /* position: fixed; */
+    justify-content: space-between;
+}
+
+/* Parent Cotainer */
+
+.logo-container{
+    display:flex;
+    margin-left: 1.5rem;
+    align-content: center;
+    align-items: center; 
+}
+
+.title{
+    font-size: 1.5rem;
+    
+      
+}
+
+.colmar{
+    font-weight: 900;
+}
+
+.academy{
+    font-weight: 400;
+}
+
+
+nav{
+    display: inline-flex;
+    margin-right: 2rem;
+    
+
+}
+
+nav a{
+    font-size:1rem;
+    text-decoration: none;
+    padding: 1rem;
+    color:black;
+    
+  
+}
+
+/* Mobile Header */
+
+header.mobile{
+    display: none;
+}
+
+/* Main Section */
+
+main{
+    display:flex;
+    position:absolute;
+    width:100%;
+    background-color:lightgray;
+}
+
+.column1{
+    display:flex;
+    width:60%;
+    margin: 32px 24px;
+
+}
+
+.column2{
+    display:flex;
+    align-content: center;
+    align-items:center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    
+}
+
+.column2 h1{
+    font-size: 4rem;
+    font-weight: 900;
+    padding: 2rem;  
+    
+}
+
+.column2 h2{
+    font-size: 2rem;
+    font-weight: 500;
+    padding: 1.5rem;  
+}
+
+.button{
+    background-color: gray;
+    
+    padding: 0.5rem;
+    
+}
+
+.button a{
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-decoration: none;
+    color:black;
+    text-transform: uppercase;
+
+}
