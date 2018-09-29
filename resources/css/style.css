@@ -10,13 +10,16 @@ body{
 
 header.desktop{
     display: flex;
-    height: 4rem;
+    height: 64px;
     align-items: center;
     align-content: center;
     width:100%;
     background-color:whitesmoke;
    /* position: fixed; */
     justify-content: space-between;
+    position: fixed;
+    z-index: 1;
+    
 }
 
 /* Parent Cotainer */
@@ -69,7 +72,7 @@ header.mobile{
 
 main{
     display:flex;
-    position:absolute;
+    position:relative;
     width:100%;
     background-color:lightgray;
 }
@@ -88,34 +91,104 @@ main{
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    
+    width:40%;   
 }
 
 .column2 h1{
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: 900;
-    padding: 2rem;  
-    
+    padding: 1rem; 
+    color: gray;    
 }
 
-.column2 h2{
-    font-size: 2rem;
+.column2 p{
+    font-size: 1.5rem;
     font-weight: 500;
-    padding: 1.5rem;  
+    padding: 1rem 2rem; 
+    color: gray;     
 }
 
 .button{
     background-color: gray;
-    
-    padding: 0.5rem;
+    width:60%;
+     padding: 8px 0;
     
 }
 
 .button a{
     font-size: 1.5rem;
-    font-weight: 700;
+    font-weight: 500;
     text-decoration: none;
-    color:black;
-    text-transform: uppercase;
+    color:whitesmoke;    
 
+}
+
+/* Second Section */
+
+section{
+    display:flex;
+    position: relative;
+        
+}
+
+/* Second Section - Left */
+
+.column3{
+    width:60%;
+    margin: 32px 24px;
+    display: flex;
+    flex-direction: column;    
+}
+
+.section-content{
+    display:flex;
+    flex-direction: column;
+}
+
+/* Second Section - Right */
+
+.aside{
+    width:40%;
+    display:flex;
+}
+
+aside img{
+    width:35%;
+    height: auto;
+    display: flex;
+}
+
+.column4{
+    display: flex;
+}
+
+.column5{
+    display: flex;
+}
+
+.column6{
+    display: flex;
+}
+
+
+.side-content{
+    display: flex;
+    width:65%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.learning{
+    display:flex;
+    width:100%;
+    position: relative;
+}
+
+.section-title{
+    display:flex;
+}
+
+.course{
+    display:flex;
 }
