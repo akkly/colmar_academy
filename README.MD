@@ -5,8 +5,6 @@ Author: Yeshwanth Kadri
 
 Email: kadri007@gmail.com
 
-Business Email: yesh@akkly.com 
-
 Course: Build Websites from Scrath - Codecademy 
 
 Subject: Unit 8 : Colmar Academy Project
