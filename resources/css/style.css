@@ -3,8 +3,37 @@ html{
 }
 
 body{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif;    
 }
+
+/* Fonts */
+h1{
+    font-size: 3rem;
+}
+
+h2{
+    font-size: 2.4rem;
+    
+}
+
+h3{
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    padding-bottom: 1rem;
+}
+
+h4{
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: 100;     
+}
+
+p{
+    font-size: 1rem;
+    line-height: 1.5rem;
+    padding:0.5rem;
+}
+
 
 /* Header Section */
 
@@ -32,34 +61,43 @@ header.desktop{
 }
 
 .title{
-    font-size: 1.5rem;
-    
-      
+    font-size: 1.5rem; 
+    text-transform: uppercase;       
 }
 
 .colmar{
     font-weight: 900;
+    color:black;
 }
 
 .academy{
     font-weight: 400;
+    color:gray;
 }
 
 
 nav{
     display: inline-flex;
-    margin-right: 2rem;
-    
-
+    margin-right: 2rem;   
 }
 
 nav a{
     font-size:1rem;
     text-decoration: none;
     padding: 1rem;
-    color:black;
-    
-  
+    color: white; 
+    background-color:gray;
+    margin-right: 1rem;
+    /*border-right: 16px solid whitesmoke; */   
+}
+
+nav :hover{
+color:black;
+background-color: darkorange
+}
+
+nav :active{
+    color:blue;
 }
 
 /* Mobile Header */
@@ -74,7 +112,7 @@ main{
     display:flex;
     position:relative;
     width:100%;
-    background-color:lightgray;
+    background-color:lightgray;    
 }
 
 .column1{
@@ -111,42 +149,68 @@ main{
 .button{
     background-color: gray;
     width:60%;
-     padding: 8px 0;
-    
+     padding: 8px 0;    
 }
 
 .button a{
-    font-size: 1.5rem;
-    font-weight: 500;
+    font-size: 1.2rem;
+    font-weight: 400;
     text-decoration: none;
-    color:whitesmoke;    
+    color:whitesmoke;
+    text-transform: uppercase;      
+}
 
+.button :hover{
+    color:red;
+    width:60%;
 }
 
 /* Second Section */
 
 section{
     display:flex;
-    position: relative;
+    position: relative;    
+    background-color: whitesmoke;
+    
+    width:100%;  
         
 }
 
 /* Second Section - Left */
 
 .column3{
-    width:60%;
-    margin: 32px 24px;
+    padding: 32px 24px;    
+   /* margin: 32px 24px;*/
     display: flex;
-    flex-direction: column;    
+    flex-direction: column;
+    width:60%;  
+    border: 1px solid lightgray;  
+     
+    
 }
+
+.column3 img{
+    width:100%;
+}
+
 
 .section-content{
     display:flex;
     flex-direction: column;
+    padding: 32px 0;
+    width:100%;
+    
+}
+
+.section-content p{
+    padding:24px 0;
 }
 
 /* Second Section - Right */
 
+.section-side{
+    width:40%;
+}
 .aside{
     width:40%;
     display:flex;
@@ -156,18 +220,25 @@ aside img{
     width:35%;
     height: auto;
     display: flex;
+    padding:16px;
 }
 
 .column4{
     display: flex;
+    background-color: whitesmoke;
+    border: 1px solid lightgrey;
 }
 
 .column5{
     display: flex;
+    background-color: whitesmoke;
+    border: 1px solid lightgray;
 }
 
 .column6{
     display: flex;
+    background-color: lightgrey;
+    border: 1px solid lightgray;
 }
 
 
@@ -175,20 +246,190 @@ aside img{
     display: flex;
     width:65%;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    align-items: left;
+    justify-content: center; 
+    padding:1rem;   
 }
 
+.side-content a{
+    text-decoration: none;
+    font-size: 1rem;
+    color:whitesmoke;
+    padding:9px;
+    background-color:gray;
+    width:20%;
+    text-align: center;
+
+}
+
+.side-content a:hover{
+    color:black;
+    background-color: darkorange;
+}
+
+.side-content p{
+    padding: 8px 0;
+}
+
+
+
+/* Third Section */
 .learning{
     display:flex;
     width:100%;
     position: relative;
+    background-color: lightgray;
+    flex-wrap: wrap;
 }
 
 .section-title{
     display:flex;
+    padding: 32px 0;
+    text-align: center;
+    justify-content: center;
+    width:100%;
 }
 
 .course{
     display:flex;
+    width:30%;
+    flex-direction:column;
+    background-color: whitesmoke;
+    margin:0 32px 32px 0;
+    
 }
+
+.course-section{
+    display:flex;
+    width:100%;    
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin:32px 72px;
+}
+
+.course-content{
+    display: flex;
+    flex-direction: column;
+    padding: 16px 0 24px 16px;
+}
+
+.course-content h4{
+    padding: 8px 0;
+}
+
+/* Fourth Section - Thesis Exhibit */
+
+.thesis{
+    display:flex;
+    width:100%;
+    background-color: aquamarine;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+.thesis-title{
+    display:flex;
+    padding: 32px 0;
+    text-align: center;
+    justify-content: center;
+    width:100%; 
+    background-color:whitesmoke;   
+
+}
+
+.thesis-section{
+    display:flex;
+    width:100%;
+}
+
+.column7{
+    display: flex;
+    width:60%;
+    background-color:whitesmoke;
+    flex-direction: column;
+    padding: 0 24px 24px 24px;    
+}
+
+.column7 video{    
+    width:100%;
+    margin-bottom: 24px;
+    
+}
+
+.thesis-content p{
+    padding: 8px 0;
+}
+
+.column8{
+    display:flex;
+    width:40%;
+    background-color: whitesmoke;
+    flex-direction: column;
+}
+
+/* Try aside */
+
+.column9{
+    width:100%;
+    display:flex;
+    background-color: lightgrey;
+}
+
+.thesis-side{
+    width:100%;
+    display:flex;
+    background-color:whitesmoke;
+}
+
+
+.thesis-side img{
+    width:35%;
+    height: auto;
+    display: flex;
+    padding:16px;
+}
+
+/* Try side content */
+
+.thesis-side-content{
+    display: flex;
+    width:65%;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center; 
+    padding:1rem; 
+
+}
+
+
+
+/* Footer Section */
+
+footer{
+    display: flex;
+    color:gray;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.copy{
+    display:flex;
+    padding:16px 24px;
+}
+
+.terms{
+    display: flex;
+    justify-items: flex-end;    
+}
+
+.terms a{
+    padding:16px;
+    text-decoration: none;
+    color: gray;
+}
+
+.terms :hover{
+    color:red;
+}
+
+
