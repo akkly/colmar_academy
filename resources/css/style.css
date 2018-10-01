@@ -1,10 +1,17 @@
 html{
     font-size: 16px;
-}
+    }
 
 body{
-    font-family: 'Roboto', sans-serif;    
+    font-family: 'Roboto', sans-serif; 
+    color: rgb(15,15,15);   
 }
+/* 
+Color Code :
+Background : White Smoke: #f5f5f5 , rbg(245,245,245)
+Font: Onyx : #0f0f0f , rgb(15,15,15)
+
+*/
 
 /* Fonts */
 h1{
@@ -39,16 +46,14 @@ p{
 
 header.desktop{
     display: flex;
+    width:100%;
     height: 64px;
     align-items: center;
     align-content: center;
-    width:100%;
-    background-color:whitesmoke;
-   /* position: fixed; */
-    justify-content: space-between;
-    position: fixed;
-    z-index: 1;
-    
+    justify-content: space-between;    
+    background-color:#f5f5f5;     
+    /*position: fixed; 
+    z-index: 1; */
 }
 
 /* Parent Cotainer */
@@ -67,7 +72,7 @@ header.desktop{
 
 .colmar{
     font-weight: 900;
-    color:black;
+    color: rgb(15,15,15);
 }
 
 .academy{
@@ -78,22 +83,24 @@ header.desktop{
 
 nav{
     display: inline-flex;
-    margin-right: 2rem;   
-}
+    margin-right: 2rem; 
+    }
 
 nav a{
     font-size:1rem;
     text-decoration: none;
     padding: 1rem;
-    color: white; 
+    color: #f5f5f5; 
     background-color:gray;
-    margin-right: 1rem;
-    /*border-right: 16px solid whitesmoke; */   
+    margin-right: 0.5rem;
+    /*border-right: 16px solid whitesmoke; */  
 }
 
 nav :hover{
-color:black;
-background-color: darkorange
+color: rgb(15,15,15);
+background-color: darkorange;
+text-transform: uppercase;
+font-weight: 400;
 }
 
 nav :active{
@@ -102,78 +109,83 @@ nav :active{
 
 /* Mobile Header */
 
-header.mobile{
+.mobile-nav{
     display: none;
 }
 
-/* Main Section */
+/* First Section */
 
 main{
     display:flex;
     position:relative;
     width:100%;
-    background-color:lightgray;    
+    background-color:lightgray;
+    /*flex-wrap: wrap;*/    
 }
 
 .column1{
     display:flex;
     width:60%;
     margin: 32px 24px;
-
 }
+
 
 .column2{
     display:flex;
+    width:40%;  
     align-content: center;
-    align-items:center;
+    align-items: center;
     flex-direction: column;
     justify-content: center;
-    text-align: center;
-    width:40%;   
+    text-align: center; 
+    padding-right: 24px; 
 }
 
 .column2 h1{
+    width:100%;
     font-size: 3rem;
     font-weight: 900;
-    padding: 1rem; 
+    padding: 1rem 0; 
     color: gray;    
+}
+
+.button :hover{
+    color: #f5f5f5;
+    font-size:2rem;
+    font-weight: 700;
+
 }
 
 .column2 p{
     font-size: 1.5rem;
     font-weight: 500;
-    padding: 1rem 2rem; 
-    color: gray;     
+    padding: 1rem 0; 
+    color: gray;        
 }
 
 .button{
     background-color: gray;
-    width:60%;
-     padding: 8px 0;    
+    width:100%;
+    padding: 8px 0;    
 }
 
 .button a{
     font-size: 1.2rem;
     font-weight: 400;
     text-decoration: none;
-    color:whitesmoke;
+    color:#f5f5f5;
     text-transform: uppercase;      
 }
 
-.button :hover{
-    color:red;
-    width:60%;
-}
 
 /* Second Section */
 
 section{
     display:flex;
     position: relative;    
-    background-color: whitesmoke;
-    
+    background-color: #f5f5f5;  
     width:100%;  
-        
+    /*flex-wrap: wrap; */       
 }
 
 /* Second Section - Left */
@@ -185,8 +197,11 @@ section{
     flex-direction: column;
     width:60%;  
     border: 1px solid lightgray;  
-     
     
+}
+
+.column3 :hover{
+    background-color: orange;
 }
 
 .column3 img{
@@ -206,6 +221,7 @@ section{
     padding:24px 0;
 }
 
+
 /* Second Section - Right */
 
 .section-side{
@@ -220,27 +236,19 @@ aside img{
     width:35%;
     height: auto;
     display: flex;
-    padding:16px;
+    padding:16px;    
 }
 
 .column4{
     display: flex;
-    background-color: whitesmoke;
+    width:100%;
+    background-color: #f5f5f5;
     border: 1px solid lightgrey;
 }
 
-.column5{
-    display: flex;
-    background-color: whitesmoke;
-    border: 1px solid lightgray;
+.column4 :hover{
+    background-color: orange;
 }
-
-.column6{
-    display: flex;
-    background-color: lightgrey;
-    border: 1px solid lightgray;
-}
-
 
 .side-content{
     display: flex;
@@ -254,7 +262,7 @@ aside img{
 .side-content a{
     text-decoration: none;
     font-size: 1rem;
-    color:whitesmoke;
+    color: #f5f5f5;
     padding:9px;
     background-color:gray;
     width:20%;
@@ -263,8 +271,11 @@ aside img{
 }
 
 .side-content a:hover{
-    color:black;
-    background-color: darkorange;
+    color:#f5f5f5;
+    background-color:darkred;
+    text-transform: uppercase;
+    font-weight:400;    
+    padding: 15px;  
 }
 
 .side-content p{
@@ -294,9 +305,12 @@ aside img{
     display:flex;
     width:30%;
     flex-direction:column;
-    background-color: whitesmoke;
-    margin:0 32px 32px 0;
-    
+    background-color:#f5f5f5;
+    margin:0 32px 32px 0;    
+}
+
+.course :hover{
+    background-color: orange;
 }
 
 .course-section{
@@ -317,12 +331,16 @@ aside img{
     padding: 8px 0;
 }
 
+.mobile-learning{
+    display:none;
+}
+
+
 /* Fourth Section - Thesis Exhibit */
 
 .thesis{
     display:flex;
     width:100%;
-    background-color: aquamarine;
     position: relative;
     flex-wrap: wrap;
 }
@@ -333,7 +351,7 @@ aside img{
     text-align: center;
     justify-content: center;
     width:100%; 
-    background-color:whitesmoke;   
+    background-color:#f5f5f5;  
 
 }
 
@@ -345,17 +363,19 @@ aside img{
 .column7{
     display: flex;
     width:60%;
-    background-color:whitesmoke;
+    background-color: #f5f5f5;
     flex-direction: column;
     padding: 0 24px 24px 24px;    
 }
 
 .column7 video{    
     width:100%;
-    margin-bottom: 24px;
-    
+    margin-bottom: 24px;    
 }
 
+.column7 :hover{
+    background-color: orange;
+}
 .thesis-content p{
     padding: 8px 0;
 }
@@ -363,22 +383,19 @@ aside img{
 .column8{
     display:flex;
     width:40%;
-    background-color: whitesmoke;
+    background-color: #f5f5f5;
     flex-direction: column;
 }
 
-/* Try aside */
-
-.column9{
-    width:100%;
-    display:flex;
-    background-color: lightgrey;
-}
 
 .thesis-side{
     width:100%;
     display:flex;
-    background-color:whitesmoke;
+    background-color:#f5f5f5;
+}
+
+.thesis-side :hover{
+    background-color: orange;
 }
 
 
@@ -389,7 +406,7 @@ aside img{
     padding:16px;
 }
 
-/* Try side content */
+
 
 .thesis-side-content{
     display: flex;
@@ -410,6 +427,7 @@ footer{
     color:gray;
     width: 100%;
     justify-content: space-between;
+    background-color: #f5f5f5;
 }
 
 .copy{
@@ -423,13 +441,184 @@ footer{
 }
 
 .terms a{
-    padding:16px;
+    padding:0 2rem 0 0;
     text-decoration: none;
     color: gray;
 }
 
 .terms :hover{
-    color:red;
+    text-transform: uppercase;
+    font-weight:300;
+    font-size:1.5rem;
 }
 
 
+/* MOBILE VERSION */
+
+@media only screen and (max-width: 480px) {
+      
+    header{
+      display: none;                
+    }
+
+    header nav{
+        display:none;
+    }
+
+    .logo-container{
+        display:none;
+    }
+
+    .desktop nav{
+        display: none;
+    }
+  
+  
+    .mobile-nav{    
+      display: flex;
+      width:100%;
+      height:64px;
+      justify-content: space-between;
+      align-items: center;
+      align-content: center;
+      padding-right: 24px;
+      padding-left: 24px; 
+      padding-bottom:24px;                   
+    }
+
+    .mobile-nav a{
+        width:100%;        
+
+    }
+  
+  
+  /* Mobile - First Section */
+
+  main{
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+      margin: 0 auto;      
+  }
+
+  .column1{
+      width:90%;
+  }
+
+  .column2{
+      width:90%; 
+      margin: 0 auto;
+      align-items: center;
+      text-align: center;     
+  }
+
+  .column2 h1{
+      font-size:1.5rem;
+  }
+
+  .column2 p{
+      font-size:1rem;
+  }
+
+  .button{
+      width:60%;
+  }
+
+
+/* Mobile - Second Section */
+
+.section{
+    width:100%;
+    /*display: flex;*/
+}
+
+aside{
+    width:100%;
+    disply:flex;
+}
+.column3{
+    display:none;
+}
+
+
+.column4{    
+    flex-direction: column;
+    width:100%;  
+    align-items: center; 
+       
+}
+
+.column4 img{
+    width:90%;
+    margin: auto 0;
+    padding: 1rem;
+}
+
+.side-content{
+    width:90%;  
+}
+
+
+/* Mobile - Learning Section */
+.learning{
+    display:none;
+}
+
+.mobile-learning{
+   display: flex;
+   width:100%;
+   padding:0;
+   margin:0;     
+   flex-direction:column; 
+}
+
+
+
+.mobile-learning ul li{
+    padding: 1rem;
+    margin:0.5rem;
+    background: lightgrey;
+    text-align: left;    
+    width:90%;
+    align-items: center;    
+}
+
+.mobile-learning a{
+    text-decoration: none;
+    color:gray;
+    font-weight:700;   
+}
+
+
+
+  /* Mobile - Thesis Section */
+
+    .column7{
+      width:100%;
+  }
+.thesis-content{
+    display:none;
+    padding: 0;
+    margin:0;    
+}
+
+.column8{
+    display:none;
+}
+
+
+/* Mobile - Footer */
+
+  .footer{
+      text-align:center;      
+      margin:0;
+      padding:0;
+      width:100%;
+  }
+
+  .terms{
+      display: none;
+  }
+}
+
+/* Thank You @ Codecademy */
