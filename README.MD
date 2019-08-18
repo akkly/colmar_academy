@@ -3,7 +3,7 @@
 
 Author: Yeshwanth Kadri
 
-Email: kadri007@gmail.com
+Email: akkly4u@gmail.com
 
 Course: Build Websites from Scrath - Codecademy 
 
